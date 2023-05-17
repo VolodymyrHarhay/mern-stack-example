@@ -6,7 +6,7 @@ const connect = () => {
     const url = process.env.MONGO_CONNECTION_STRING;
     logger.info("process.env.MONGO_CONNECTION_STRING :::" + process.env.MONGO_CONNECTION_STRING);
 
-    mongoose.connect(url, {
+    mongoose.connect('mongodb+srv://volodharhay:volodharhay@cluster0.zafmx0y.mongodb.net/', {
         useNewUrlParser: true,
         useFindAndModify: true,
         useUnifiedTopology: true,
